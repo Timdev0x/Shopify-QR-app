@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "qr-code-app"
+client_id = "d30a71c883bdfe6d1ca58c65339df38a"
+application_url = "https://dom-screens-improvement-insulin.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://dom-screens-improvement-insulin.trycloudflare.com/auth/callback",
+  "https://dom-screens-improvement-insulin.trycloudflare.com/auth/shopify/callback",
+  "https://dom-screens-improvement-insulin.trycloudflare.com/api/auth/callback",
+  "https://dom-screens-improvement-insulin.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "app-devs.myshopify.com"
